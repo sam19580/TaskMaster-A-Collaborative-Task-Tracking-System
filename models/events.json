@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "event": {
+        "type": "object",
+        "properties": {
+          "id":{
+            "default":"0"
+          },
+          "username": {
+            "type": "string"
+          },
+          "eventname": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "default": ""
+          },
+          "time": {
+            "type": "string",
+            "default": ""
+          },
+          "participants": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "default": [""]
+          },
+          "limited seats": {
+            "type": "boolean",
+            "default":"false"
+          },
+          "seats": {
+            "type": "integer",
+            
+            "default": -1
+          },
+          "bookings": {
+            "type": "number",
+            "default": 0
+          }
+        },
+        "required": ["username", "eventname", "description","time","date"]
+      }
+    },
+    "required": ["event"]
+  }

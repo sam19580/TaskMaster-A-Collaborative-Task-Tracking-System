@@ -1,0 +1,16 @@
+{
+    "events":[{
+    "id":1,
+    "username":"abc@gmail.com",
+    "password":"abc",
+    "name":"abc",
+    "date":"abc",
+    "time":"",
+    "description":"",
+    "participants":[],
+    "limited seats":false,
+    "capacity":0,
+    "booked":0
+    
+     }]
+}
